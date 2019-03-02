@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Registration</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<h1>Registration</h1>
+
+<div class ="container">
+<form action="/action_page.php">
+	<fieldset><legend>sign-up</legend>
+        <div class="form-group">
+            <label for="firstname">First Name:</label><br>
+            <input type="text"  class="form_control" name="firstname" required></div>
+		<br>
+        <div class="form-group">
+            <label for="lastname">Last Name:</label><br>
+            <input type="text" name="lastname" required></div>
+		<br>
+        <div class="form-group">
+		<label for="email">Email:</label><br>
+            <input type="email" name="email" required></div>
+		<br>
+        <div class="form-group">
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" required></div>
+		<br><div class="form-group"> <label for="gender">Gender:</label>
+		<input type="radio" name="gender" value="male" required checked> Male
+	  	<input type="radio" name="gender" value="female" required> Female
+	  	<input type="radio" name="gender" value="other" required> Other<br>
+        </div>
+        <div class="form-group">
+         <label for="comments">Comments:</label><br>
+            <textarea name="comments" rows="5" cols="30"></textarea></div>
+	  	<br>
+        <div class="form-group">
+            <label for state="State">State:</label>
+	  	<select name="State">
+	  		<option value="NC">NC</option>
+	  		<option value="SC">SC</option>
+	  		<option value="DC">DC</option>
+	  		<option value="CA">CA</option>
+            </select></div>
+	  	<br>
+        <div class="form-group">
+	  	Do you smoke?<br>
+	  	Yes<input type="checkbox"><br>
+            No<input type="checkbox" checked><br></div>
+	  	<button type="button">Register student</button>
+  	</fieldset>
+</form>
+    </div>
+
+</body>
+</html>
