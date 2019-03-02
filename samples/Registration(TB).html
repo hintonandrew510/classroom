@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration</title>
+</head>
+<body>
+
+<h1>Form</h1>
+
+<form>
+	<fieldset>
+		First Name:<br>
+		<input type="text" name="firstname" required>
+		<br>
+		Last Name:<br>
+		<input type="text" name="lastname" required>
+		<br>
+		Email:<br>
+		<input type="email" name="email" required>
+		<br>
+		Password:<br>
+		<input type="password" name="password" required>
+		<br>
+		<input type="radio" name="gender" value="male" required> Male<br>
+	  	<input type="radio" name="gender" value="female" required> Female<br>
+	  	<input type="radio" name="gender" value="other" required> Other<br>
+	  	<textarea name="comments" rows="10" cols="30" placeholder="Enter Text Here"></textarea>
+	  	<br>
+	  	<select name="State">
+	  		<option value="AK">AK</option>
+	  		<option value="CA">CA</option>
+	  		<option value="NC">NC</option>
+	  		<option value="WA">WA</option>
+	  	</select>
+	  	<br>
+	  	Do you smoke?<br>
+	  	Yes<input type="checkbox"><br>
+	  	No<input type="checkbox"><br>
+	  	<button type="button">Register Student</button>
+  	</fieldset>
+</form>
+
+</body>
+</html>
