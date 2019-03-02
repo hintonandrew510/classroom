@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Student Registration</title>
+    <title>Student Registration</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>Form Changed</h1>
-<form>
-	<fieldset>
-		First Name:<br>
-		<input type="text" name="firstname" required>
-		<br>
-		Last Name:<br>
-		<input type="text" name="lastname" required>
-		<br>
-		Email:<br>
-		<input type="email" name="email" required>
-		<br>
-		Password:<br>
-		<input type="password" name="password" required>
-		<br>
-		<input type="radio" name="gender" value="male" required> Male<br>
-	  	<input type="radio" name="gender" value="female" required> Female<br>
-	  	<input type="radio" name="gender" value="other" required> Other<br>
-	  	<textarea name="comments" rows="10" cols="30" placeholder="Enter Text Here"></textarea>
-	  	<br>
-	  	<select name="State">
-	  		<option value="AK">AK</option>
-	  		<option value="CA">CA</option>
-	  		<option value="NC">NC</option>
-	  		<option value="WA">WA</option>
-	  	</select>
-	  	<br>
-	  	Do you smoke?<br>
-	  	Yes<input type="checkbox"><br>
-	  	No<input type="checkbox"><br>
-	  	<button type="button">Register Student</button>
-  	</fieldset>
-</form>
-
+<div class="container">
+<fieldset>
+  <h2>Student Registration</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="firstname">First Name:</label>
+      <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname">
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last Name:</label>
+      <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="lastname">
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+    </div>
+    <div class="btn-group" role="group" aria-label="Gender">
+      <button type="button" class="btn btn-secondary">Male</button>
+      <button type="button" class="btn btn-secondary">Female</button>
+      <button type="button" class="btn btn-secondary">Other</button>
+    </div>
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="10" cols="30" id="comment"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="sel1">Select list:</label>
+      <select class="form-control" id="sel1">
+        <option>AK</option>
+        <option>CA</option>
+        <option>NC</option>
+        <option>FL</option>
+        <option>SC</option>
+        <option>TX</option>
+        <option>WA</option>
+      </select>
+    </div>
+    <div class="checkbox">
+        <label>Do you smoke?</label>
+        <label><input type="checkbox" name="remember">Yes</label>
+        <label><input type="checkbox" name="remember">No</label>
+    </div>
+    <button type="submit" class="btn btn-default">Register Student</button>
+  </form>
+</fieldset>
+</div>
 </body>
 </html>
