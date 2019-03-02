@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <fieldset>
+            <form action="/action_page.php">
+                <legend>Personal Information</legend><br>
+                <div class="form-group">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" class="form-control" id="fname" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password</label><br>
+                    <input type="password" class="form-control" id="pwd" name="pwd" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender: </label>
+                    <span><input type="radio" name="gender" value="female" required> Male</span>
+                    <span><input type="radio" name="gender" value="male" required> Female</span>
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <div><textarea rows="4" cols="20"></textarea></div>
+                </div>
+                <div class="dropdown">
+                    <label for="state">State: </label>
+                    <select>
+                        <option value="North Carolina">NC</option>
+                        <option value="Louisiana">LA</option>
+                        <option value="Georgia">GA</option>
+                    </select>
+                </div>
+                <br>
+                <div class="checkbox-ctn">
+                    <label>Do you Smoke?</label>
+                    <span><input type="checkbox" name="Yes" value="Yes" required> Yes</span>
+                    <span><input type="checkbox" required> No</span>
+                </div>
+                <br>
+                <input type="submit" value="Register Student">
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
