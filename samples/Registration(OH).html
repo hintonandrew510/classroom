@@ -27,9 +27,9 @@
   <header><center><h2>Student Registration Form 2019</h2></center></header>
   <br><br>
 <form>
-    <p class="ex1"><b>First Name: <input type="text" name="first" required></b></p>
+    <p class="ex1"><b>First Name: </b><input type="text" name="first" placeholder=" Enter First Name" required></p>
     <br>
-    <p class="ex1"><b>Last Name: <input type="text" name="last" required></b></p>
+    <p class="ex1"><b>Last Name: </b><input type="text" name="last" placeholder=" Enter Last Name" required></p>
     <br><br>
     <div class="form-group">
     <p class="ex1"><label for="email">Please enter your email address:</label></p>
@@ -37,14 +37,14 @@
     </div>
   <div class="form-group">
     <p class="ex1"><label for="password">Please enter your password:</label></p>
-    <p class="ex2"><input type="password" class="form-control" id="password" required></p>
+    <p class="ex2"><input type="password" class="form-control" id="password" placeholder="Enter Password"required></p>
   </div>
   <br><br>
   <!-- form action="/action_page.php"-->
     <p class="ex1"><label for="gender">What is your gender?</label></p>
-    <p class="ex1"><input type="radio" name="gender" value="male" required> Male<br></p>
-    <p class="ex1"><input type="radio" name="gender" value="female" required> Female<br></p>
-    <p class="ex1"><input type="radio" name="gender" value="other" required> Other<br></p>
+    <p class="ex1"><input type="radio" name="genderM" value="male" required> Male<br></p>
+    <p class="ex1"><input type="radio" name="genderF" value="female" required> Female<br></p>
+    <p class="ex1"><input type="radio" name="genderO" value="other" required> Other<br></p>
   <br><br>
   <div class="form-group">
     <p class="ex1"><label for="additionalComments">Additional Comments:</label></p>
@@ -53,8 +53,8 @@
   <div class="form-group">
     <p class="ex1"><label for="states">What state do you live in?</label></p>
     <p class="ex2"><select class="form-control" id="stateSelect">
-      <option></option>
-      <option value="AL">Alabama</option>
+      <option>Select an Option</option>
+          <option value="AL">Alabama</option>
 	  <option value="AK">Alaska</option>
 	  <option value="AZ">Arizona</option>
 	  <option value="AR">Arkansas</option>
