@@ -1,3 +1,6 @@
 This is my first commit to github.
 
 changed made by Andrew
+
+Another test of merging. 
+
