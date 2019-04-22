@@ -1,1 +1,3 @@
 This is my first commit to github.
+
+Another test of merging. 
