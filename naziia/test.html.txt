@@ -10,9 +10,20 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
- <div class="container">
-   <h1> About Wake Tech<h1>
-   <h3>Campuses & Locations</h3>
- </div>
+ <header>
+  <div class="container">
+    <div class="row" 
+         style="background:transparent url('img/profile.png') no-repeat center center /cover">
+      <div class="col-lg-12">
+        <div class="intro-text">
+          <span class="name">About Wake Tech</span>
+          <hr class="star-light">
+          <span class="skills">Campuses & Locations</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
 <br>
 </body>
