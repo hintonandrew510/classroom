@@ -1,3 +1,4 @@
+
 .c-centerContent 
 {
     justify-content: space-between;
@@ -10,4 +11,23 @@ p {
 font-size: 14px;
   display: inline-block;
 
+}
+||||||| merged common ancestors
+.c-centerContent {
+    justify-content: space-between;
+    padding-left: 0px;
+}
+.Southwakecampus p {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.c-centerContent {
+    justify-content: space-between;
+    padding-left: 0px;
+}
+
+.Southwakecampus p {
+  font-size: 14px;
+  display: inline-block;
 }
