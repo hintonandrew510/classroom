@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Calendar</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-
+<!--Creating the Nav bar headers  -->
 <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Wake Tech</a>
-    </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">About</a></li>
+      <li><a href="#">About</a></li>
       <li><a href="#">Calendar</a></li>
       <li><a href="#">News</a></li>
       <li><a href="#">Location</a></li>
@@ -25,10 +19,42 @@
   </div>
 </nav>
 
-<div class="container">
-  <h3>Basic Navbar Example</h3>
+<!-- Set up responsive calendar -->
 
-</div>
+<div class="container-fluid">
+    <header>
+        <h4 class="display-4 mb-4 text-center">April 2019</h4>
+        <div class="row d-none d-sm-flex p-1 bg-dark text-white">
+            <h5 class="col-sm p-1 text-center">Sunday</h5>
+            <h5 class="col-sm p-1 text-center">Monday</h5>
+            <h5 class="col-sm p-1 text-center">Tuesday</h5>
+            <h5 class="col-sm p-1 text-center">Wednesday</h5>
+            <h5 class="col-sm p-1 text-center">Thursday</h5>
+            <h5 class="col-sm p-1 text-center">Friday</h5>
+            <h5 class="col-sm p-1 text-center">Saturday</h5>
+  </div>
+<header>
+
+<!--Sunday Events  -->
+  <div class="row border border-right-0 border-bottom-0">
+    <div class="day col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-light text-muted">
+        <h5 class="row align-items-center">
+            <span class="date col-1">29</span>
+            <small class="col d-sm-none text-center text-muted">Sunday</small>
+            <span class="col-1"></span>
+        </h5>
+        <p class="d-sm-none">No events</p>
+    </div>
+
+</header>
+
+
+<!-- Creating footer nav bar -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-bottom">
+  <p>© 2018 Wake Technical Community College | 9101 Fayetteville Road, Raleigh, North Carolina 27603 | Main Tel: 919-866-5000</p>
+</nav>
+
+
 
 </body>
 </html>
